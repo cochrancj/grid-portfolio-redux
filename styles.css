@@ -197,15 +197,28 @@ p {
 .portfolio-box {
   display: grid;
   grid-template-columns: minmax(50px, 150px) 6fr;
-  margin: 2% 5% 5% 1%;
+  
+  background-color: #E1E6E9;
 }
 
+.portfolio-sidebar {
+  margin: 5% 5% 0% 10%;
+/*  font-size: 16px;*/
+}
+
+/*FIGURE OUT HOW TO HAVE TWO ROWS OF STUFF*/
 .projects {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: 5fr;
+/*  grid-template-columns: 20vw 30vw 40vw;
+  grid-template-rows: 10vh 40vh 10vh 40vh;*/
   grid-template-areas:
     "....... project-header"
-    "project-left project-right";
+    "project-left project-right"
+    "....... second-project-header"
+    "second-project-left second-project-right";
+  margin: 2% 5% 5% 1%;
 }
 
 .project-header {
@@ -243,6 +256,40 @@ p {
   margin-top: 10%;
 }
 
+.second-project-header {
+  grid-area: project-header;
+}
+
+.second-project-left {
+  align-self: center;
+  grid-area: project-left;
+}
+
+.second-project-left img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.second-project-right {
+  line-height: 1.5em;
+  grid-area: project-right;
+  margin: 10% 0% 10% 0%;
+}
+
+.second-project-right h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.second-project-right p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.second-project-right .nav {
+  margin-top: 10%;
+}
 
 
 
