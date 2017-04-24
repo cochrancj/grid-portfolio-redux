@@ -197,7 +197,7 @@ p {
 .portfolio-box {
   display: grid;
   grid-template-columns: minmax(50px, 150px) 6fr;
-  
+  grid-template-rows: 1fr;
   background-color: #E1E6E9;
 }
 
@@ -210,14 +210,22 @@ p {
 .projects {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 5fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
 /*  grid-template-columns: 20vw 30vw 40vw;
   grid-template-rows: 10vh 40vh 10vh 40vh;*/
   grid-template-areas:
     "....... project-header"
     "project-left project-right"
     "....... second-project-header"
-    "second-project-left second-project-right";
+    "second-project-left second-project-right"
+    "....... third-project-header"
+    "third-project-left third-project-right"
+    "....... fourth-project-header"
+    "fourth-project-left fourth-project-right"
+    "....... fifth-project-header"
+    "fifth-project-left fifth-project-right"
+    "....... sixth-project-header"
+    "sixth-project-left sixth-project-right";
   margin: 2% 5% 5% 1%;
 }
 
@@ -288,6 +296,146 @@ p {
 }
 
 .second-project-right .nav {
+  margin-top: 10%;
+}
+
+.third-project-header {
+  grid-area: project-header;
+}
+
+.third-project-left {
+  align-self: center;
+  grid-area: project-left;
+}
+
+.third-project-left img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.third-project-right {
+  line-height: 1.5em;
+  grid-area: project-right;
+  margin: 10% 0% 10% 0%;
+}
+
+.third-project-right h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.third-project-right p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.third-project-right .nav {
+  margin-top: 10%;
+}
+
+.fourth-project-header {
+  grid-area: project-header;
+}
+
+.fourth-project-left {
+  align-self: center;
+  grid-area: project-left;
+}
+
+.fourth-project-left img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.fourth-project-right {
+  line-height: 1.5em;
+  grid-area: project-right;
+  margin: 10% 0% 10% 0%;
+}
+
+.fourth-project-right h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.fourth-project-right p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.fourth-project-right .nav {
+  margin-top: 10%;
+}
+
+.fifth-project-header {
+  grid-area: project-header;
+}
+
+.fifth-project-left {
+  align-self: center;
+  grid-area: project-left;
+}
+
+.fifth-project-left img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.fifth-project-right {
+  line-height: 1.5em;
+  grid-area: project-right;
+  margin: 10% 0% 10% 0%;
+}
+
+.fifth-project-right h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.fifth-project-right p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.fifth-project-right .nav {
+  margin-top: 10%;
+}
+
+.sixth-project-header {
+  grid-area: project-header;
+}
+
+.sixth-project-left {
+  align-self: center;
+  grid-area: project-left;
+}
+
+.sixth-project-left img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.sixth-project-right {
+  line-height: 1.5em;
+  grid-area: project-right;
+  margin: 10% 0% 10% 0%;
+}
+
+.sixth-project-right h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.sixth-project-right p {
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.sixth-project-right .nav {
   margin-top: 10%;
 }
 
