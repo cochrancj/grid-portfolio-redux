@@ -208,11 +208,10 @@ p {
 
 /*FIGURE OUT HOW TO HAVE TWO ROWS OF STUFF*/
 .projects {
+ /* display: subgrid;*/
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
-/*  grid-template-columns: 20vw 30vw 40vw;
-  grid-template-rows: 10vh 40vh 10vh 40vh;*/
+  /*grid-template-rows: repeat(6, 2fr);*/
   grid-template-areas:
     "....... project-header"
     "project-left project-right"
@@ -234,8 +233,11 @@ p {
 }
 
 .project-left {
-  align-self: center;
+/*  align-self: center;*/
   grid-area: project-left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-left img {
